@@ -1,0 +1,65 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+    <PropertyGroup>
+        <TargetFramework>net6.0</TargetFramework>
+        <Nullable>enable</Nullable>
+        <ImplicitUsings>enable</ImplicitUsings>
+    </PropertyGroup>
+
+    <ItemGroup>
+      <Folder Include="Views" />
+      <Folder Include="Views\Page\DataTable" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <_ContentIncludedByDefault Remove="wwwroot\images\bg1.jpg" />
+      <_ContentIncludedByDefault Remove="wwwroot\images\bg2.jpg" />
+      <_ContentIncludedByDefault Remove="wwwroot\images\bg3.jpg" />
+      <_ContentIncludedByDefault Remove="wwwroot\images\companies\alphabet.jpg" />
+      <_ContentIncludedByDefault Remove="wwwroot\images\companies\amazon.jpg" />
+      <_ContentIncludedByDefault Remove="wwwroot\images\companies\apple.jpg" />
+      <_ContentIncludedByDefault Remove="wwwroot\images\companies\c3ai.jpg" />
+      <_ContentIncludedByDefault Remove="wwwroot\images\companies\docusign.jpg" />
+      <_ContentIncludedByDefault Remove="wwwroot\images\companies\ibm.jpg" />
+      <_ContentIncludedByDefault Remove="wwwroot\images\companies\metaplatforms.jpg" />
+      <_ContentIncludedByDefault Remove="wwwroot\images\companies\micron.jpg" />
+      <_ContentIncludedByDefault Remove="wwwroot\images\companies\microsoft.jpg" />
+      <_ContentIncludedByDefault Remove="wwwroot\images\companies\nvidia.jpg" />
+      <_ContentIncludedByDefault Remove="wwwroot\images\companies\oracle.jpg" />
+      <_ContentIncludedByDefault Remove="wwwroot\images\companies\siemens.jpg" />
+      <_ContentIncludedByDefault Remove="wwwroot\images\jobs\top7jobs.jpg" />
+      <_ContentIncludedByDefault Remove="wwwroot\images\technologies\cc.jpg" />
+      <_ContentIncludedByDefault Remove="wwwroot\images\technologies\cv.jpg" />
+      <_ContentIncludedByDefault Remove="wwwroot\images\technologies\dl.jpg" />
+      <_ContentIncludedByDefault Remove="wwwroot\images\technologies\ml.jpg" />
+      <_ContentIncludedByDefault Remove="wwwroot\images\technologies\nlp.jpg" />
+      <_ContentIncludedByDefault Remove="wwwroot\images\technologies\nn.jpg" />
+      <_ContentIncludedByDefault Remove="wwwroot\css\images\bg1.jpg" />
+      <_ContentIncludedByDefault Remove="wwwroot\css\images\bg2.jpg" />
+      <_ContentIncludedByDefault Remove="wwwroot\css\images\bg3.jpg" />
+      <_ContentIncludedByDefault Remove="wwwroot\css\images\companies\alphabet.jpg" />
+      <_ContentIncludedByDefault Remove="wwwroot\css\images\companies\amazon.jpg" />
+      <_ContentIncludedByDefault Remove="wwwroot\css\images\companies\apple.jpg" />
+      <_ContentIncludedByDefault Remove="wwwroot\css\images\companies\c3ai.jpg" />
+      <_ContentIncludedByDefault Remove="wwwroot\css\images\companies\docusign.jpg" />
+      <_ContentIncludedByDefault Remove="wwwroot\css\images\companies\ibm.jpg" />
+      <_ContentIncludedByDefault Remove="wwwroot\css\images\companies\metaplatforms.jpg" />
+      <_ContentIncludedByDefault Remove="wwwroot\css\images\companies\micron.jpg" />
+      <_ContentIncludedByDefault Remove="wwwroot\css\images\companies\microsoft.jpg" />
+      <_ContentIncludedByDefault Remove="wwwroot\css\images\companies\nvidia.jpg" />
+      <_ContentIncludedByDefault Remove="wwwroot\css\images\companies\oracle.jpg" />
+      <_ContentIncludedByDefault Remove="wwwroot\css\images\companies\siemens.jpg" />
+      <_ContentIncludedByDefault Remove="wwwroot\css\images\jobs\top7jobs.jpg" />
+      <_ContentIncludedByDefault Remove="wwwroot\css\images\technologies\cc.jpg" />
+      <_ContentIncludedByDefault Remove="wwwroot\css\images\technologies\cv.jpg" />
+      <_ContentIncludedByDefault Remove="wwwroot\css\images\technologies\dl.jpg" />
+      <_ContentIncludedByDefault Remove="wwwroot\css\images\technologies\ml.jpg" />
+      <_ContentIncludedByDefault Remove="wwwroot\css\images\technologies\nlp.jpg" />
+      <_ContentIncludedByDefault Remove="wwwroot\css\images\technologies\nn.jpg" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <Content Include="main.py" />
+    </ItemGroup>
+
+</Project>

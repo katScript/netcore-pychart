@@ -1,0 +1,125 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>@ViewData["Title"]</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+          rel="stylesheet"
+          integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    @* <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css"/> *@
+    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true"/>
+    <link rel="stylesheet" href="~/Demo.styles.css" asp-append-version="true"/>
+</head>
+<body>
+
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="@Url.Action("Home", "Page")">AI</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link @ViewData["ActiveHome"]" href="@Url.Action("Home", "Page")">Home page</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link @ViewData["ActiveCompany"]" href="@Url.Action("Companies", "Page")">Companies</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link @ViewData["ActiveJob"]" href="@Url.Action("Jobs", "Page")">Jobs</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link @ViewData["ActiveContact"]" href="@Url.Action("Contact", "Page")">Contact Us</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<main role="main">
+    @RenderBody()
+</main>
+
+<!-- Footer -->
+<footer class="text-center text-lg-start bg-light text-muted">
+    <section class="d-flex justify-content-center p-4 border-bottom">
+        <div class="d-none d-lg-block">
+            <h4>More about us!</h4>
+        </div>
+    </section>
+
+    <!-- Section: Links  -->
+    <section class="">
+        <div class="container text-center text-md-start mt-5">
+            <!-- Grid row -->
+            <div class="row mt-3">
+                <!-- Grid column -->
+                <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+                    <!-- Links -->
+                    <h6 class="text-uppercase fw-bold mb-4">
+                        Ai
+                    </h6>
+                    <p>
+                        <a href="@Url.Action("Home", "Page")" class="text-reset">Home page</a>
+                    </p>
+                    <p>
+                        <a href="@Url.Action("Jobs", "Page")" class="text-reset">Jobs</a>
+                    </p>
+                    <p>
+                        <a href="@Url.Action("Companies", "Page")" class="text-reset">Companies</a>
+                    </p>
+                    <p>
+                        <a href="@Url.Action("Contact", "Page")" class="text-reset">Contact Us</a>
+                    </p>
+                </div>
+                
+                <!-- Grid column -->
+                <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+                    <div>
+                        <a href="#" class="me-4 text-reset">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a href="#" class="me-4 text-reset">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a href="#" class="me-4 text-reset">
+                            <i class="fab fa-google"></i>
+                        </a>
+                        <a href="#" class="me-4 text-reset">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="#" class="me-4 text-reset">
+                            <i class="fab fa-linkedin"></i>
+                        </a>
+                        <a href="#" class="me-4 text-reset">
+                            <i class="fab fa-github"></i>
+                        </a>
+                    </div>
+                </div>
+                <!-- Grid column -->
+            </div>
+            <!-- Grid row -->
+        </div>
+    </section>
+    <!-- Section: Links  -->
+
+    <!-- Copyright -->
+    <div class="text-center p-4" style="background-color: rgba(0, 0, 0, 0.05);">
+        <h4>--- AI ---</h4>
+    </div>
+    <!-- Copyright -->
+</footer>
+<!-- Footer -->
+
+<script src="~/lib/jquery/dist/jquery.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+<script src="https://kit.fontawesome.com/6f5cc7ad7b.js" crossorigin="anonymous"></script>
+<script src="~/js/site.js" asp-append-version="true"></script>
+
+
+@await RenderSectionAsync("Scripts", required: false)
+</body>
+</html>

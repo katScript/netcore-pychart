@@ -1,0 +1,69 @@
+@model dynamic
+
+@{
+    ViewBag.ActiveJob = "active";
+    Layout = "_Layout";
+}
+
+<section class="section-3 text-center">
+    <img src="/images/bg1.jpg" class="tech-bg img-fluid" alt="top-6-tech"/>
+
+    <div class="container h-100">
+        <div class="d-flex h-100 align-items-center text-center">
+            <div class="w-100 text-white">
+                <h1 class="text-header display-3">AI Job</h1>
+                <p class="video-text lead mb-0">
+                    AI job dataset: Insights AI-Jobs <br/>
+                    Python source for tables and plots: Kaggle
+                </p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="top-tech text-center">
+    <img src="/images/bg3.jpg" class="tech-bg img-fluid" alt="top-6-tech"/>
+
+    <div class="tech-flow h-100 align-items-center text-center">
+        <div class="d-flex align-items-center text-center">
+            <div class="w-100 text-white">
+                <h4 class="topic-header display-3">TOP 10 company locations (according to number of employees)</h4>
+                <div class="container">
+                    @Html.Partial("~/Views/Page/DataTable/data10company.cshtml")
+                </div>
+            </div>
+        </div>
+        <div class="d-flex align-items-center text-center">
+            <div class="w-100 text-white">
+                <h4 class="topic-header display-3">Job distribution among top 10 in demand job title</h4>
+                <div class="chart-data">
+                    <img src="/images/jobs/job_title_10.png" class="img-fluid" alt=""/>
+                </div>
+            </div>
+        </div>
+        <div class="d-flex align-items-center text-center">
+            <div class="w-100 text-white">
+                <h4 class="topic-header display-3">Salaries in the last 3 years</h4>
+                <div class="chart-data">
+                    <img src="/images/jobs/salary_last_3_year.png" class="img-fluid" alt=""/>
+                </div>
+            </div>
+        </div>
+        <div class="d-flex align-items-center text-center">
+            <div class="w-100 text-white">
+                <h4 class="topic-header display-3">Salary VS top job titles with their respective employment type</h4>
+                <div class="chart-data">
+                    <img src="/images/jobs/salary_top_job_title.png" class="img-fluid" alt=""/>
+                </div>
+            </div>
+        </div>
+        <div class="d-flex align-items-center text-center">
+            <div class="w-100 text-white">
+                <h4 class="topic-header display-3">Salary VS top job titles with their respective experience level</h4>
+                <div class="chart-data">
+                    <img src="/images/jobs/salary_top_job_title_experience.png" class="img-fluid" alt=""/>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

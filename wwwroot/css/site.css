@@ -1,0 +1,302 @@
+html {
+    font-size: 14px;
+}
+
+@media (min-width: 768px) {
+    html {
+        font-size: 16px;
+    }
+}
+
+html {
+    position: relative;
+    min-height: 100%;
+}
+
+::-webkit-scrollbar {
+    width: 0;
+    background: transparent;
+}
+
+body {
+    margin-bottom: 60px;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* home page */
+
+/* header */
+.header {
+    position: relative;
+    background-color: black;
+    height: 100vh;
+    min-height: 50rem;
+    width: 100%;
+    overflow: hidden;
+}
+
+.header video {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: 0;
+    -ms-transform: translateX(-50%) translateY(-50%);
+    -moz-transform: translateX(-50%) translateY(-50%);
+    -webkit-transform: translateX(-50%) translateY(-50%);
+    transform: translateX(-50%) translateY(-50%);
+}
+
+.header .container {
+    position: relative;
+    z-index: 2;
+}
+
+.header .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(1, 1, 1, 0.4);
+    z-index: 1;
+}
+
+.text-header {
+    font-family: 'Anton', sans-serif;
+    background-image: linear-gradient(to right, brown, brown, yellow, white, yellow, brown, brown);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: brown;
+    font-size: 6em;
+}
+
+.header .video-text {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.55em;
+    text-align: center;
+}
+
+/* top tech */
+.top-tech {
+    position: relative;
+    background-color: black;
+    height: 80vh;
+    min-height: 50rem;
+    width: 100%;
+    overflow: hidden;
+}
+
+.top-tech .tech-bg {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: 0;
+    -ms-transform: translateX(-50%) translateY(-50%);
+    -moz-transform: translateX(-50%) translateY(-50%);
+    -webkit-transform: translateX(-50%) translateY(-50%);
+    transform: translateX(-50%) translateY(-50%);
+}
+
+.top-tech .tech-flow {
+    position: relative;
+    z-index: 2;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+
+.top-tech .tech-flow .topic-header {
+    font-size: 3em !important;
+    padding: 10% 5% 5% 5%;
+}
+
+.top-tech .tech-flow .row img {
+    padding: 0;
+}
+
+.col-img {
+    position: relative;
+    background-color: black;
+    overflow: hidden;
+    height: 50vh;
+    min-height: 300px;
+    padding: 0;
+}
+
+.col-img .tech-img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: 0;
+    -ms-transform: translateX(-50%) translateY(-50%);
+    -moz-transform: translateX(-50%) translateY(-50%);
+    -webkit-transform: translateX(-50%) translateY(-50%);
+    transform: translateX(-50%) translateY(-50%);
+}
+
+.col-img .tech-content {
+    position: relative;
+    z-index: 2;
+    padding: 10px;
+    display: none;
+    background-color: rgba(1, 1, 1, 0.4);
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+
+/* section 3 */
+
+.section-3 {
+    position: relative;
+    height: auto;
+    min-height: 100vh;
+    width: 100%;
+    overflow: hidden;
+}
+
+.section-3 .tech-bg {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: 0;
+    -ms-transform: translateX(-50%) translateY(-50%);
+    -moz-transform: translateX(-50%) translateY(-50%);
+    -webkit-transform: translateX(-50%) translateY(-50%);
+    transform: translateX(-50%) translateY(-50%);
+}
+
+.section-3 .container {
+    position: relative;
+    z-index: 2;
+}
+
+.section-3 .text-header {
+    font-size: 3em !important;
+    padding: 10% 5% 5% 5%;
+}
+
+.section-3 #sec3-img {
+    display: none;
+}
+
+.block {
+    position: relative;
+    overflow: hidden;
+    height: auto;
+    min-height: 20vh;
+    margin: 10px 0 10px 0;
+}
+
+.block .tech-bg {
+    padding: 10px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: 0;
+    -ms-transform: translateX(-50%) translateY(-50%);
+    -moz-transform: translateX(-50%) translateY(-50%);
+    -webkit-transform: translateX(-50%) translateY(-50%);
+    transform: translateX(-50%) translateY(-50%);
+}
+
+.block .content {
+    position: relative;
+    z-index: 2;
+    padding: 0;
+    overflow-x: hidden;
+    overflow-y: auto;
+    width: auto;
+    height: auto;
+    min-width: 100%;
+    min-height: 100%;
+    transition: 2s ease;
+    background: linear-gradient(to right, gray, white, gray);
+}
+
+.block:hover .content {
+    opacity: 0;
+}
+
+.block .content .company {
+    text-shadow: 2px 2px 0px white, 2px 2px 3px navy;
+    color: navy;
+    font-family: Arial, sans-serif;
+    font-size: 40px;
+    padding: 0;
+}
+
+.right-desc .desc {
+    background: linear-gradient(to bottom, #ff9933, #ffe6cc, white, white);
+    padding: 20px;
+}
+
+.left-desc .desc {
+    background: linear-gradient(to bottom, #3333ff, #ccccff, white, white);
+    padding: 20px;
+}
+
+.company-name {
+    text-shadow: 2px 2px 0px white, 2px 2px 4px navy;
+    font-family: "Oxygen", sans-serif;
+    letter-spacing: 7px;
+    text-transform: uppercase;
+}
+
+.c-img {
+    padding: 0;
+}
+
+.company-desc {
+    text-align: left !important;
+    color: black;
+    padding: 20px;
+}
+
+.contact-col {
+    box-shadow: 10px 10px 0px 0px #f8f6b0;
+    background-color: rgb(10, 10, 100, 0.5);
+    color: #f8f6b0;
+    text-shadow: 4px 4px 0px navy, 4px 4px 8px white;
+    font-family: 'Anton', sans-serif;
+}
+
+.contact-col h4 {
+    font-family: 'Niconne', cursive;
+}
+
+@media only screen and (max-width: 768px) {
+    .contact-col {
+        box-shadow: none!important;
+    }
+}
+
+.topic-header {
+    text-shadow: 4px 4px 2px navy, 4px 4px 8px white; 
+    color: #f8f6b0;
+    font-family: 'Anton', sans-serif;
+}
+
+
